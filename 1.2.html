@@ -1,0 +1,82 @@
+<!-- PAC3 - M4. 252 – HTML i CSS -->
+<!-- Primera part - PREGUNTA 1.2 -->
+<!-- Autor: Irene Batlle I Capa -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>1.2 Position</title>
+        <style>
+            div.static {
+             position: static;
+             padding: 5px;
+             color: white;
+             background-color: black;  
+            } 
+            div.relative{
+             position: relative;
+             padding: 5px;
+             color: white;
+             background-color: black;
+             left: 50px;    
+            }
+            div.absolute{
+             position: absolute;
+             padding: 5px;
+             color: white;
+             background-color: black;
+             top: 80px;
+             right: 0;
+             width: 200px;
+             height: 100px;   
+            }
+            div.fixed{
+             position: fixed;
+             padding: 5px;
+             color: white;
+             background-color:black;
+             bottom: 70px;
+             right: 0;
+             width: 100px;
+            }
+            div.sticky{
+            position: sticky;
+            top: 0;
+            padding: 5px;
+            color: white;
+            background-color: black;
+            }
+            div.padding-bottom{
+                padding-bottom:2000px;
+            }
+        </style> 
+    </head>
+    
+    <body> 
+        <p>PAC3 - M4.252 - HTML i CSS</p>
+        <p><strong>Pregunta 1.2 propietat position</strong></p>
+            <br>
+        <h2>position: static</h2>
+        <div class="static">Això és un element static</div>
+        <p>És el valor per defecte. Els elements es col·loquen segons el flux normal de la pàgina, de cap manera especial.</p>
+            <br>
+        <h2>position: relative</h2>
+        <div class="relative">Això és un element relative</div>
+        <p>Els elements es desplacen respecte la seva posició normal i sense que el seu posicionament afecti a a la resta d’elements. La resta de contingut no s’ajusta per adaptar-se a aquests elements, de manera que es poden crear espais buits o superposicions.</p>
+            <br>
+        <h2>position: absolute</h2>
+        <div class="absolute">Això és un element absolute</div>
+        <p>Els elements es desplacen respecte el primer element contenidor o respecte a l’extrem superior esquerre de la pàgina. Els elements posicionats amb la propietat position: absolute s’eliminen del flux normal de la pàgina i la resta d’elements es posicionen com si aquests no existissin, de manera que es poden crear espais buits o superposicions.</p>
+            <br>
+        <h2>position: fixed</h2>
+        <div class="fixed">Això és un element fixed</div>
+        <p>Els elements es desplacen respecte la finestra gràfica i es mantenen en un posició fixa encara que es desplaci la pàgina.</p>
+            <br>
+        <h2>position: sticky</h2>
+        <div class="sticky">Això és un element sticky</div>
+            <div class="padding-bottom">
+                <p>Els elements es desplacen respecte la posició de desplaçament de l’usuari i alternen la posició relative i fixed: es comporten com elements amb la propietat position: relative fins que troben un desplaçament definit a la finestra gràfica, on actuen amb la propietat position: fixed.</p>
+            </div>
+    </body>
+    </html>
